@@ -4243,7 +4243,7 @@ AVL
 \noindent
 \align center
 \begin_inset Graphics
-	filename /Users/yoav/Documents/University/data_structures/formulary/images/r rotation.png
+	filename images/r-rotation.png
 	scale 20
 
 \end_inset
@@ -4261,7 +4261,7 @@ AVL
 \noindent
 \align center
 \begin_inset Graphics
-	filename /Users/yoav/Documents/University/data_structures/formulary/images/ltr roatation.png
+	filename images/ltr-roatation.png
 	scale 20
 
 \end_inset
