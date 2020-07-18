@@ -1,0 +1,124 @@
+\documentclass[8pt,twocolumn]{extarticle}
+\makeatletter
+\usepackage[a4paper,margin=0.15in]{geometry} % margins setup
+\usepackage{array}
+\usepackage{nicefrac}
+\usepackage{rotating}
+\usepackage{preamble}
+
+\newcommand{\newformula}{\noindent\rule{0.5\textwidth}{0.4pt}\par}
+
+% override theorem envs from my preamble not to include numbering
+\newcommand{\unnumbertheorem}[2]{
+  \expandafter\let\csname #1\endcsname\undefined
+  \expandafter\let\csname end#1\endcsname\undefined
+  \newtheorem*{#1}{#2}
+}
+\newtheoremstyle{all}% name
+{1pt \@plus 0.2em}% Space above
+{1pt \@plus 0.2em}% Space below
+{}% Body font
+{}% Indent amount
+{\bfseries}% Theorem head font
+{.}% Punctuation after theorem head
+{.5em}% Space after theorem head
+{}% Theorem head spec (includes/00-test.bare_tex can be left empty, meaning 'normal')
+\theoremstyle{all}
+\unnumbertheorem{definition}{הגדרה}
+\unnumbertheorem{definition*}{הגדרה}
+\unnumbertheorem{defn}{הגדרה}
+\unnumbertheorem{defn*}{הגדרה}
+\unnumbertheorem{lemma}{למה}
+\unnumbertheorem{lem}{למה}
+\unnumbertheorem{lem*}{למה}
+\unnumbertheorem{lemma*}{למה}
+\unnumbertheorem{theorem}{משפט}
+\unnumbertheorem{theorem*}{משפט}
+\unnumbertheorem{thm}{משפט}
+\unnumbertheorem{thm*}{משפט}
+\unnumbertheorem{corollary}{מסקנה}
+\unnumbertheorem{corollary*}{מסקנה}
+\unnumbertheorem{cor}{מסקנה}
+\unnumbertheorem{cor*}{מסקנה}
+\unnumbertheorem{claim}{טענה}
+\unnumbertheorem{claim*}{טענה}
+\unnumbertheorem{question*}{שאלה}
+\unnumbertheorem{sol*}{תשובה}
+\unnumbertheorem{lyxalgorithm*}{אלגוריתם}
+\unnumbertheorem{rem*}{הערה}
+\unnumbertheorem{proof}{הוכחה}
+
+
+% reduce spacing around display math
+\AtBeginDocument{
+  \abovedisplayskip=4pt plus 3pt minus 4pt
+  \abovedisplayshortskip=0pt plus 3pt
+  \belowdisplayskip=4pt plus 3pt minus 4pt
+  \belowdisplayshortskip=7pt plus 3pt minus 7pt
+
+  % \setlength{\abovedisplayskip}{0em}
+  % \setlength{\abovedisplayshortskip}{0em}
+  % \setlength{\belowdisplayskip}{0em}
+  % \setlength{\belowdisplayshortskip}{0em}
+}
+
+\setcounter{secnumdepth}{0}
+\renewcommand\section{\vspace{-2em}\@startsection {section}{1}{\z@}%
+  {-5.5ex \@plus -1ex \@minus -.2ex}%
+  {.3ex \@plus.2ex}%
+                                     {\normalfont\small\bfseries\center}}
+\renewcommand\subsection{\vspace{-2em}\@startsection {subsection}{1}{\z@}%
+  {-5.5ex \@plus -1ex \@minus -.2ex}%
+  {.3ex \@plus.2ex}%
+                                     {\normalfont\footnotesize\bfseries\center}}
+\renewcommand\subsubsection{\vspace{-2em}\@startsection {subsubsection}{1}{\z@}%
+  {-5.5ex \@plus -1ex \@minus -.2ex}%
+  {.3ex \@plus.2ex}%
+                                     {\normalfont\scriptsize\bfseries\center}}
+\makeatother
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% https://tex.stackexchange.com/a/109608
+\makeatletter
+\renewcommand{\@listI}{%
+\leftmargin=25pt
+\rightmargin=0pt
+\labelsep=5pt
+\labelwidth=20pt
+\itemindent=0pt
+\listparindent=0pt
+\topsep=0pt plus 2pt minus 4pt
+\partopsep=0pt plus 1pt minus 1pt
+\parsep=0pt plus 1pt
+\itemsep=\parsep}
+\def\@listii {\leftmargin\leftmarginii
+              \labelwidth\leftmarginii
+              \advance\labelwidth-\labelsep
+              \topsep 0pt
+              \parsep 0pt
+              \itemsep   \parsep}
+\makeatother
+
+\title{\normalsize\textbf{
+    דף נוסחאות - מבני נתונים 2020 סמסטר ב'
+  }}
+% \and in \author doesn't work in XeTeX, and manually doing this hfill stuff in
+% \author gives an error. So... do it in \date instead.
+\date{
+ \vspace{-6em} % space is expensive!
+ \begin{tabular}{C{0.25\paperwidth} C{0.25\paperwidth}}
+   \small יואב רוזין & \small איתמר רוט
+ \end{tabular}
+ \vspace{-0.5em}
+}
+
+\begin{document}
+\raggedbottom
+\maketitle
+\input{includes}
+
+
+\end{document}
