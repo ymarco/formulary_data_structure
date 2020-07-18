@@ -1,7 +1,7 @@
 export PATH := $(PATH):/Applications/LyX.app/Contents/MacOS/
 SHELL = /bin/bash
 
-LATEX=latexmk -interaction=nonstopmode -pdf -xelatex --synctex=1
+LATEX=latexmk -f -interaction=nonstopmode -pdf -xelatex --synctex=1
 
 LYXS=$(wildcard includes/*.lyx)
 LYXINCLUDES=$(patsubst %.lyx,%.bare_tex,$(LYXS))
