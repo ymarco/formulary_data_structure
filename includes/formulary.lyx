@@ -403,23 +403,17 @@ theorems-ams-extended
 \end_layout
 
 \begin_layout Standard
+\noindent
 היררכיה של משפחות )
 \begin_inset Formula $\alpha<1,\beta\geq1,\gamma>1$
 \end_inset
 
 , גם ביניהם יש היררכיה, ככל שכל אחד מהם גדול יותר כך הוא נמצא גבוה יותר
  בהיררכיה(:
-\begin_inset Formula 
-\[
-O\left(1\right),O\left(\alpha\left(n\right)\right),O\left(\logs n\right),O\left(\log n\right),O\left(n^{\alpha}\right),O\left(n\right),O\left(n\log n\right),O\left(n^{\beta}\right),O\left(\gamma^{n}\right),O\left(n^{n}\right)
-\]
-
+\begin_inset Newline newline
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -430,6 +424,52 @@ status open
 vspace{-1.5em}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $O\left(1\right),O\left(\alpha\left(n\right)\right),O\left(\logs n\right),O\left(\log n\right),O\left(n^{\alpha}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $O\left(n\right),O\left(n\log n\right),O\left(n^{\beta}\right),O\left(\gamma^{n}\right),O\left(n^{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
