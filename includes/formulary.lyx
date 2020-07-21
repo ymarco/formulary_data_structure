@@ -645,7 +645,7 @@ Amortized
 
 .
  נאמר שסיבוכיות זמן 
-\begin_inset Formula ${\color{green}\amort}\left(T_{i}\right)$
+\begin_inset Formula ${\color{green!50!black}\amort}\left(T_{i}\right)$
 \end_inset
 
  היא חסם
@@ -682,7 +682,7 @@ amortized
 \end_inset
 
  מתקיים 
-\begin_inset Formula ${\color{blue}\time}\left(\mathrm{op}_{1},\ldots,\mathrm{op}_{n}\right)\leq\sum_{i=1}^{n}{\color{green}\amort}\left(T\left(\mathrm{op}_{i}\right)\right)$
+\begin_inset Formula ${\color{blue}\time}\left(\mathrm{op}_{1},\ldots,\mathrm{op}_{n}\right)\leq\sum_{i=1}^{n}{\color{green!50!black}\amort}\left(T\left(\mathrm{op}_{i}\right)\right)$
 \end_inset
 
 .
@@ -774,7 +774,7 @@ aggregetion
 \end_inset
 
  נגדיר 
-\begin_inset Formula ${\color{green}\amort}\left(T_{j}\right)=\frac{1}{m}\sum_{i=1}^{m}{\color{blue}\time}\left(\mathrm{op}_{i}\right)$
+\begin_inset Formula ${\color{green!50!black}\amort}\left(T_{j}\right)=\frac{1}{m}\sum_{i=1}^{m}{\color{blue}\time}\left(\mathrm{op}_{i}\right)$
 \end_inset
 
 .
@@ -843,7 +843,7 @@ amortized
 \end_inset
 
  ואז 
-\begin_inset Formula ${\color{green}\amort}\left(\mathrm{op}_{i}\right)={\color{blue}\time}\left(\mathrm{op}_{i}\right)+\Phi_{i}-\Phi_{i-1}$
+\begin_inset Formula ${\color{green!50!black}\amort}\left(\mathrm{op}_{i}\right)={\color{blue}\time}\left(\mathrm{op}_{i}\right)+\Phi_{i}-\Phi_{i-1}$
 \end_inset
 
 .
@@ -2709,7 +2709,7 @@ null
 
 \begin_inset Formula 
 \[
-{\color{green}\amort}\left(\text{Delete}\right)=O\left(1\right),{\color{green}\amort}\left(\text{Retrieve}\left(i\right)\right)=O\left(i\right)
+{\color{green!50!black}\amort}\left(\text{Delete}\right)=O\left(1\right),{\color{green!50!black}\amort}\left(\text{Retrieve}\left(i\right)\right)=O\left(i\right)
 \]
 
 \end_inset
